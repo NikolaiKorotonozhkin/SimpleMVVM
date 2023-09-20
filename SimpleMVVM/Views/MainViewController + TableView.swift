@@ -48,4 +48,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         60
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let dataSource = viewModel.dataSource else { return }
+        presentDetailsViewController(user: dataSource[indexPath.row])
+    }
 }
