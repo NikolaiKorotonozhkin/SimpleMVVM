@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
     
     var viewModel = MainViewModel()
     
-    var cellDataSource = [Users]()
+    var cellDataSource = [MainCellViewModel]()
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

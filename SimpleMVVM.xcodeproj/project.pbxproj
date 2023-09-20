@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9169AB7F2ABB483500AB6401 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169AB7E2ABB483500AB6401 /* Observable.swift */; };
+		9169AB812ABB56BF00AB6401 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169AB802ABB56BF00AB6401 /* MainCell.swift */; };
+		9169AB832ABB585600AB6401 /* MainCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169AB822ABB585600AB6401 /* MainCellViewModel.swift */; };
 		91DE9F482AB8D76000251B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE9F472AB8D76000251B8A /* AppDelegate.swift */; };
 		91DE9F4A2AB8D76000251B8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE9F492AB8D76000251B8A /* SceneDelegate.swift */; };
 		91DE9F4C2AB8D76000251B8A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE9F4B2AB8D76000251B8A /* MainViewController.swift */; };
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		9169AB7E2ABB483500AB6401 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		9169AB802ABB56BF00AB6401 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		9169AB822ABB585600AB6401 /* MainCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCellViewModel.swift; sourceTree = "<group>"; };
 		91DE9F442AB8D76000251B8A /* SimpleMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DE9F472AB8D76000251B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91DE9F492AB8D76000251B8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			children = (
 				91DE9F4B2AB8D76000251B8A /* MainViewController.swift */,
 				91DE9F602AB8DB9D00251B8A /* MainViewController + TableView.swift */,
+				9169AB802ABB56BF00AB6401 /* MainCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				91DE9F622AB8DC6D00251B8A /* MainViewModel.swift */,
+				9169AB822ABB585600AB6401 /* MainCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -228,8 +234,10 @@
 				91E0F4812ABA251200697F79 /* EndPoint.swift in Sources */,
 				91DE9F632AB8DC6D00251B8A /* MainViewModel.swift in Sources */,
 				91E0F4862ABA274800697F79 /* URLSession + Extensions.swift in Sources */,
+				9169AB832ABB585600AB6401 /* MainCellViewModel.swift in Sources */,
 				91DE9F4C2AB8D76000251B8A /* MainViewController.swift in Sources */,
 				9169AB7F2ABB483500AB6401 /* Observable.swift in Sources */,
+				9169AB812ABB56BF00AB6401 /* MainCell.swift in Sources */,
 				91E0F48A2ABA289300697F79 /* NetworkRequest.swift in Sources */,
 				91DE9F612AB8DB9D00251B8A /* MainViewController + TableView.swift in Sources */,
 				91DE9F482AB8D76000251B8A /* AppDelegate.swift in Sources */,
