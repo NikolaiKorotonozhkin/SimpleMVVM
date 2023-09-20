@@ -15,22 +15,50 @@ class MainViewController: UIViewController {
         return tableView
     }()
     
+    let activiryIndicator = UIActivityIndicatorView()
+    
     var viewModel = MainViewModel()
+    
+    var cellDataSource = [Users]()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        viewModel.getUsers()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViews()
         setConstraints()
-        viewModel.getUsers()
+        bindViewModel()
     }
     
     private func setupViews() {
         view.backgroundColor = .white
         title = "Main Screen"
         
+        activiryIndicator.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(activiryIndicator)
+        
         view.addSubview(tableView)
         setupTableView()
+    }
+    
+    private func bindViewModel() {
+        viewModel.isLoading.bind { [weak self] isloading in
+            guard let self, let isloading else { return }
+            DispatchQueue.main.async {
+                isloading ? self.activiryIndicator.startAnimating() : self.activiryIndicator.stopAnimating()
+            }
+        }
+        
+        viewModel.cellDataSource.bind { [weak self] users in
+            guard let self, let users else { return }
+            self.cellDataSource = users
+            self.reloadTableView()
+        }
     }
 
 }
@@ -41,7 +69,10 @@ extension MainViewController {
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            activiryIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            activiryIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
 }

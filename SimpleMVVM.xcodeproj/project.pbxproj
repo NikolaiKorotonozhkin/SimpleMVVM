@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9169AB7F2ABB483500AB6401 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169AB7E2ABB483500AB6401 /* Observable.swift */; };
 		91DE9F482AB8D76000251B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE9F472AB8D76000251B8A /* AppDelegate.swift */; };
 		91DE9F4A2AB8D76000251B8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE9F492AB8D76000251B8A /* SceneDelegate.swift */; };
 		91DE9F4C2AB8D76000251B8A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE9F4B2AB8D76000251B8A /* MainViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9169AB7E2ABB483500AB6401 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		91DE9F442AB8D76000251B8A /* SimpleMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DE9F472AB8D76000251B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91DE9F492AB8D76000251B8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9169AB7D2ABB482200AB6401 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9169AB7E2ABB483500AB6401 /* Observable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		91DE9F3B2AB8D76000251B8A = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 				91DE9F5C2AB8D93C00251B8A /* Views */,
 				91DE9F5D2AB8D94400251B8A /* ViewModels */,
 				91E0F47F2ABA24F300697F79 /* Network */,
+				9169AB7D2ABB482200AB6401 /* Helpers */,
 				91E0F4842ABA271E00697F79 /* Extensions */,
 				91DE9F5F2AB8D95300251B8A /* Supporting Files */,
 			);
@@ -218,6 +229,7 @@
 				91DE9F632AB8DC6D00251B8A /* MainViewModel.swift in Sources */,
 				91E0F4862ABA274800697F79 /* URLSession + Extensions.swift in Sources */,
 				91DE9F4C2AB8D76000251B8A /* MainViewController.swift in Sources */,
+				9169AB7F2ABB483500AB6401 /* Observable.swift in Sources */,
 				91E0F48A2ABA289300697F79 /* NetworkRequest.swift in Sources */,
 				91DE9F612AB8DB9D00251B8A /* MainViewController + TableView.swift in Sources */,
 				91DE9F482AB8D76000251B8A /* AppDelegate.swift in Sources */,
